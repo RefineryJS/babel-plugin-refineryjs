@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-refineryjs",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "RefineryJS compiler as babel plugin",
   "main": "bin/index.js",
   "scripts": {
