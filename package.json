@@ -4,9 +4,10 @@
   "description": "RefineryJS compiler as babel plugin",
   "main": "bin/index.js",
   "scripts": {
-    "test": "eslint src/** test/**",
+    "lint": "eslint src/** test/**",
+    "test": "npm run lint",
     "build": "babel src --out-dir bin",
-    "deploy": "npm test && npm run build && npm publish"
+    "postversion": "git push origin master && npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "babel-eslint": "^4.1.8",
     "babel-plugin-syntax-object-rest-spread": "^6.5.0",
     "babel-plugin-transform-object-rest-spread": "^6.5.0",
-    "eslint-config-refineryjs": "^0.1.1"
+    "eslint": "^2.0.0",
+    "eslint-config-refineryjs": "^0.2.0"
   }
 }
