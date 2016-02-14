@@ -1,0 +1,32 @@
+{
+  "name": "babel-plugin-refineryjs",
+  "version": "0.3.0",
+  "description": "RefineryJS compiler as babel plugin",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "eslint src/** test/**",
+    "build": "babel src --out-dir bin",
+    "deploy": "npm test && npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/refineryjs/babel-plugin-refineryjs.git"
+  },
+  "keywords": [
+    "refineryjs"
+  ],
+  "author": "HyeonuPark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/refineryjs/babel-plugin-refineryjs/issues"
+  },
+  "homepage": "https://github.com/refineryjs/babel-plugin-refineryjs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.5.2",
+    "babel-eslint": "^4.1.8",
+    "babel-plugin-syntax-object-rest-spread": "^6.5.0",
+    "babel-plugin-transform-object-rest-spread": "^6.5.0",
+    "eslint-config-refineryjs": "^0.1.1"
+  }
+}
